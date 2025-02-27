@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/doctorProfileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor Profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/doctorNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dr. Andargachew Belete"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/doctorSpecialtyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Specialty: Cardiology"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/patientProfileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/patientNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"/>
+
+    <EditText
+        android:id="@+id/patientAgeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Age"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/patientDiseaseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Disease"/>
+
+    <EditText
+        android:id="@+id/patientCardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Card Number"/>
+
+    <EditText
+        android:id="@+id/patientContactEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Contact Number"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/appointmentDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Date"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/scheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Appointment"
+        android:layout_marginTop="8dp"/>
+
+    <!-- ListView for Appointments -->
+    <TextView
+        android:id="@+id/appointmentsListLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Appointments"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/appointmentsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
